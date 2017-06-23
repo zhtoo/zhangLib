@@ -1,0 +1,1 @@
+include ':app', ':ptr', ':ptrlayout', ':qucikindex', ':wheelview', ':dataselector', ':progressdemo', ':mylibrary', ':progress', ':recyclerviewdemo', ':recyclerviewadd', ':taobaoui', ':sqldemo'

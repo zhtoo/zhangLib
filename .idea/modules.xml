@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyLib.iml" filepath="$PROJECT_DIR$/MyLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataselector/dataselector.iml" filepath="$PROJECT_DIR$/dataselector/dataselector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progress/progress.iml" filepath="$PROJECT_DIR$/progress/progress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progressdemo/progressdemo.iml" filepath="$PROJECT_DIR$/progressdemo/progressdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ptr/ptr.iml" filepath="$PROJECT_DIR$/ptr/ptr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ptrlayout/ptrlayout.iml" filepath="$PROJECT_DIR$/ptrlayout/ptrlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qucikindex/qucikindex.iml" filepath="$PROJECT_DIR$/qucikindex/qucikindex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerviewadd/recyclerviewadd.iml" filepath="$PROJECT_DIR$/recyclerviewadd/recyclerviewadd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerviewdemo/recyclerviewdemo.iml" filepath="$PROJECT_DIR$/recyclerviewdemo/recyclerviewdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sqldemo/sqldemo.iml" filepath="$PROJECT_DIR$/sqldemo/sqldemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taobaoui/taobaoui.iml" filepath="$PROJECT_DIR$/taobaoui/taobaoui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wheelview/wheelview.iml" filepath="$PROJECT_DIR$/wheelview/wheelview.iml" />
+    </modules>
+  </component>
+</project>
