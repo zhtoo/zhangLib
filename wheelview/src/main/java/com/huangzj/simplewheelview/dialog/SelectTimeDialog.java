@@ -26,6 +26,7 @@ public class SelectTimeDialog extends BaseDialog {
     private OnClickListener onClickListener;
 
     boolean cancelable = true;
+    private WheelView midWheel;
 
     /**
      * 创建一个时间选择对话框
@@ -50,8 +51,11 @@ public class SelectTimeDialog extends BaseDialog {
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         dialogView = layoutInflater.inflate(R.layout.dialog_wheel_select_time, null);
         leftWheel = (WheelView) dialogView.findViewById(R.id.select_time_wheel_left);
+        midWheel =(WheelView) dialogView.findViewById(R.id.select_time_wheel_mid);
         rightWheel = (WheelView) dialogView.findViewById(R.id.select_time_wheel_right);
-        leftWheel.setWheelStyle(WheelStyle.STYLE_HOUR);
+
+        leftWheel.setWheelStyle(WheelStyle.STYLE_DAY);
+        midWheel.setWheelStyle(WheelStyle.STYLE_HOUR);
         rightWheel.setWheelStyle(WheelStyle.STYLE_MINUTE);
 
         dialog = new AlertDialog.Builder(context).setView(dialogView).create();
@@ -78,7 +82,7 @@ public class SelectTimeDialog extends BaseDialog {
             @Override
             public void onClick(View v) {
                 if (onClickListener != null) {
-                    if (!onClickListener.onSure(leftWheel.getCurrentItem(),
+                    if (!onClickListener.onSure(leftWheel.getCurrentItem(),midWheel.getCurrentItem(),
                             rightWheel.getCurrentItem(), timeType)) {
                         dialog.dismiss();
                     }
@@ -98,12 +102,13 @@ public class SelectTimeDialog extends BaseDialog {
      * @param mMinute  默认小时的分钟
      * @param timeType 设置的时间标签，用于调用者识别回调
      */
-    public void show(int mHour, int mMinute, int timeType) {
+    public void show(int mDay,int mHour, int mMinute, int timeType) {
         if (dialog == null || dialog.isShowing()) {
             return;
         }
         this.timeType = timeType;
-        leftWheel.setCurrentItem(mHour);
+        leftWheel.setCurrentItem(mDay);
+        midWheel.setCurrentItem(mHour);
         rightWheel.setCurrentItem(mMinute);
         dialog.show();
     }
@@ -114,11 +119,12 @@ public class SelectTimeDialog extends BaseDialog {
      * @param mHour   默认显示的小时
      * @param mMinute 默认小时的分钟
      */
-    public void show(int mHour, int mMinute) {
+    public void show(int mDay,int mHour, int mMinute) {
         if (dialog == null || dialog.isShowing()) {
             return;
         }
-        leftWheel.setCurrentItem(mHour);
+        leftWheel.setCurrentItem(mDay);
+        midWheel.setCurrentItem(mHour);
         rightWheel.setCurrentItem(mMinute);
         dialog.show();
     }
@@ -138,7 +144,7 @@ public class SelectTimeDialog extends BaseDialog {
      * @author huangzj
      */
     public interface OnClickListener {
-        boolean onSure(int hour, int minute, int setTimeType);
+        boolean onSure(int day,int hour, int minute, int setTimeType);
 
         boolean onCancel();
     }

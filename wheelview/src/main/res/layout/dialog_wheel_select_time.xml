@@ -27,10 +27,32 @@
                 android:layout_centerInParent="true"
                 android:paddingLeft="40dp"
                 android:paddingTop="4dp"
+                android:text="@string/day"
+                android:textColor="@color/orange"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1">
+
+            <com.huangzj.simplewheelview.view.WheelView
+                android:id="@+id/select_time_wheel_mid"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="40dp"
+                android:paddingTop="4dp"
                 android:text="@string/hour"
                 android:textColor="@color/orange"
                 android:textSize="12sp" />
         </RelativeLayout>
+
 
         <RelativeLayout
             android:layout_width="match_parent"

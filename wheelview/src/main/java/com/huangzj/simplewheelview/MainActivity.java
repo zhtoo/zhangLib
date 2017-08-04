@@ -97,8 +97,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void showSelectTimeDialog() {
         SelectTimeDialog mSelectTimeDialog = new SelectTimeDialog(this, new SelectTimeDialog.OnClickListener() {
             @Override
-            public boolean onSure(int hour, int minute, int setTimeType) {
-                String result = String.format("%02d:%02d", hour, minute);
+            public boolean onSure(int day,int hour, int minute, int setTimeType) {
+                String result = String.format("%02d天%02d时%02d分",day ,hour, minute);
                 Toast.makeText(MainActivity.this, result, Toast.LENGTH_LONG).show();
                 return false;
             }

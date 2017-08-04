@@ -10,17 +10,21 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/choosepictrue" />
             <option value="$PROJECT_DIR$/dataselector" />
             <option value="$PROJECT_DIR$/mylibrary" />
+            <option value="$PROJECT_DIR$/mymap" />
             <option value="$PROJECT_DIR$/progress" />
             <option value="$PROJECT_DIR$/progressdemo" />
             <option value="$PROJECT_DIR$/ptr" />
             <option value="$PROJECT_DIR$/ptrlayout" />
+            <option value="$PROJECT_DIR$/pulltorefrsh" />
             <option value="$PROJECT_DIR$/qucikindex" />
             <option value="$PROJECT_DIR$/recyclerviewadd" />
             <option value="$PROJECT_DIR$/recyclerviewdemo" />
             <option value="$PROJECT_DIR$/sqldemo" />
             <option value="$PROJECT_DIR$/taobaoui" />
+            <option value="$PROJECT_DIR$/waterripple" />
             <option value="$PROJECT_DIR$/wheelview" />
           </set>
         </option>
