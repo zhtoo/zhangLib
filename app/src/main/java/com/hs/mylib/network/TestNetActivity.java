@@ -19,7 +19,7 @@ import java.util.HashMap;
 public class TestNetActivity extends AppCompatActivity {
 
     private LoadDataTask mLoadDataTask;
-    private HttpURLConnectionHelper helper =new HttpURLConnectionHelper();
+    private HttpURLConnectionHelper helper = new HttpURLConnectionHelper();
 
     //测试地址
     public static final String BASE_URL = "http://192.168.1.186:8088/";
@@ -73,15 +73,11 @@ public class TestNetActivity extends AppCompatActivity {
             @Override
             public void run() {
                 /**
-                 /storage/emulated/0/DCIM/Screenshots/Screenshot_2017-08-14-12-26-54-751_com.tencent.mobileqq.png
-                 /storage/emulated/0/DCIM/Screenshots/Screenshot_2017-08-14-12-25-49-964_com.tencent.mobileqq.png
-                 /storage/emulated/0/DCIM/Screenshots/Screenshot_2017-08-14-12-25-06-566_com.tencent.mobileqq.png
                  /storage/emulated/0/DCIM/Screenshots/Screenshot_2017-08-14-12-25-19-696_com.tencent.mobileqq.png
                  /storage/sdcard/Download/test05.jpg
                  */
 
                 /**
-                 *  {
                  *  mobileType=2,
                  *  ts=1502695880,
                  *  signa=0C530B762CE251FE921626CA9E76EC94,
@@ -90,7 +86,6 @@ public class TestNetActivity extends AppCompatActivity {
                  *  nid=borrow,
                  *  versionNumber=1.0.0,
                  *  cusId=572
-                 *  }
                  */
                 ThreadPoolProxyFactory.getNormalThreadPoolProxy().submit(new Runnable() {
                     @Override
@@ -103,10 +98,23 @@ public class TestNetActivity extends AppCompatActivity {
                         baseMap.put("nid", "borrow");
                         baseMap.put("versionNumber", "1.0.0");
                         baseMap.put("cusId", "572");
-                     //   baseMap.put("uploads", "/storage/sdcard/Download/test01.jpg");
+
                         helper.upLoadFile(UPLOAD_PICTRUE_URL,
-                                "/storage/sdcard/Download/test05.jpg" ,
+                                new String[]{"uploads", "/storage/sdcard/Download/test05.jpg"},
                                 baseMap);
+
+                        helper.getResponse(new HttpURLConnectionHelper.Call() {
+                            @Override
+                            public void onSuccess(String message) {
+
+                            }
+
+                            @Override
+                            public void onFail(String message) {
+
+                            }
+                        });
+
                     }
                 });
             }
