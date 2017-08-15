@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hs.mylib.R;
@@ -31,12 +32,14 @@ public class TestNetActivity extends AppCompatActivity {
     public static final String PEWVIEW_PICTRUE_URL = BASE_URL + "app/upload/pictureList.html";
 
     private HashMap baseMap = new HashMap<String, String>();
+    private TextView text;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test_net_activity);
+        text = (TextView) findViewById(R.id.net_text);
         baseMap.put("appkey", "59CC8095F69F3F9F1D31935C771F1957");
         baseMap.put("signa", "DC419D40DC3C39505DD89070D5B11F95");
         baseMap.put("ts", "1502694523");
@@ -63,6 +66,17 @@ public class TestNetActivity extends AppCompatActivity {
             public void run() {
                 baseMap.put("userId", "1");
                 helper.requestPost(HOME_URL, baseMap);
+                helper.getResponse(new HttpURLConnectionHelper.Call() {
+                    @Override
+                    public void onSuccess(String message) {
+                        text.setText(message);
+                    }
+
+                    @Override
+                    public void onFail(String message) {
+                        text.setText(message);
+                    }
+                });
             }
         });
     }
@@ -106,12 +120,12 @@ public class TestNetActivity extends AppCompatActivity {
                         helper.getResponse(new HttpURLConnectionHelper.Call() {
                             @Override
                             public void onSuccess(String message) {
-
+                                text.setText(message);
                             }
 
                             @Override
                             public void onFail(String message) {
-
+                                text.setText(message);
                             }
                         });
 

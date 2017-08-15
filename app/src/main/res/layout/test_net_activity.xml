@@ -37,4 +37,12 @@
         android:onClick="downloadFile"
         android:text="downloadFile"/>
 
+    <TextView
+        android:id="@+id/net_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="请求的参数"/>
+
 </LinearLayout>

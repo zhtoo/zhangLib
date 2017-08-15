@@ -171,12 +171,14 @@ public class HttpURLConnectionHelper {
             // 判断请求是否成功
             if (urlConn.getResponseCode() == 200) {
                 // 获取返回的数据
-                String result = streamToString(urlConn.getInputStream());
+                final String result = streamToString(urlConn.getInputStream());
                 Log.e(TAG, "Post方式请求成功，result--->" + result);
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-
+                        if(call!=null){
+                            call.onSuccess(result);
+                        }
                     }
                 });
             } else {
@@ -184,7 +186,9 @@ public class HttpURLConnectionHelper {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-
+                        if(call!=null){
+                            call.onFail("联网请求失败");
+                        }
                     }
                 });
             }
@@ -194,7 +198,9 @@ public class HttpURLConnectionHelper {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-
+                    if(call!=null){
+                        call.onFail("联网请求失败");
+                    }
                 }
             });
         }
@@ -247,11 +253,14 @@ public class HttpURLConnectionHelper {
                     }
                 });
             } else {
+                Log.e(TAG, "联网请求失败");
                 Log.e(TAG, "文件下载失败");
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-
+                        if(call!=null){
+                            call.onFail("联网请求失败");
+                        }
                     }
                 });
             }
@@ -261,9 +270,13 @@ public class HttpURLConnectionHelper {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-
+                    if(call!=null){
+                        call.onFail("联网请求失败");
+                    }
                 }
             });
+        }finally {
+
         }
     }
 
@@ -347,12 +360,14 @@ public class HttpURLConnectionHelper {
             int statusCode = urlConn.getResponseCode();
             if (statusCode == 200) {
                 // 获取返回的数据
-                String result = streamToString(urlConn.getInputStream());
+                final String result = streamToString(urlConn.getInputStream());
                 Log.e(TAG, "上传成功，result--->" + result);
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-
+                        if(call!=null){
+                            call.onSuccess(result);
+                        }
                     }
                 });
             } else {
@@ -360,7 +375,9 @@ public class HttpURLConnectionHelper {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-
+                        if(call!=null){
+                            call.onFail("联网请求失败");
+                        }
                     }
                 });
             }
@@ -370,10 +387,11 @@ public class HttpURLConnectionHelper {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-
+                    if(call!=null){
+                        call.onFail("上传失败");
+                    }
                 }
             });
-
         }
     }
 
