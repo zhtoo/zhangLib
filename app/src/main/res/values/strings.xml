@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">测试</string>
-
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
     <string-array name="actions_text">
         <item>现住房状况</item>

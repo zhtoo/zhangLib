@@ -16,13 +16,29 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NavigationBar.bottom.TabBottomActivity">
+        <activity android:name=".RecyclerView.test2.RecyclerViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".RecyclerView.MyActivity" android:label="@string/app_name"/>
+
+
+        <activity android:name=".RecyclerView.test.CardViewActivity"
+                  android:label="@string/app_name"/>
+
+
+        <activity android:name=".RecyclerView.test.DetailActivity"
+                  android:label="@string/app_name"/>
+
+        <activity android:name=".RecyclerView.test2.CardViewActivity"
+                  android:label="@string/app_name"/>
+
+
+
 
     </application>
 
