@@ -63,6 +63,7 @@ public class TabBottomActivity extends AppCompatActivity {
         viewpager.setAdapter(adapter);
 
         tabLayout.setupWithViewPager(viewpager);
+
         setupTabIcons(tabLayout.getSelectedTabPosition());
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {

@@ -16,7 +16,7 @@ public class BlankFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        TextView view = new TextView(getContext());
+        TextView view = new TextView(getActivity());
         view.setText(BlankFragment.class.getSimpleName());
         return view;
     }
