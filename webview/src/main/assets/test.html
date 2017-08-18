@@ -1,0 +1,26 @@
+<body>
+<a>js中调用本地方法</a>
+<script>
+
+  function funFromjs(str){
+    document.getElementById("helloWeb").innerHTML=str;
+  }
+
+  function funfromAndroid(){
+      //调用android本地方法
+      var string = "我是来自JS的参数";
+      myObj.funfromAndroid(string);
+  }
+   function funtoMain(){
+      //调用android本地方法
+      myObj.funToMain();
+  }
+
+  </script>
+<p></p>
+<button onclick="funfromAndroid()">我是JS按钮</button>
+<button onclick="funtoMain()">去主页</button>
+
+<div id="helloWeb"></div>
+
+</body>

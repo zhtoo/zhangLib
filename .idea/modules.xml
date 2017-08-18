@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/sqldemo/sqldemo.iml" filepath="$PROJECT_DIR$/sqldemo/sqldemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/taobaoui/taobaoui.iml" filepath="$PROJECT_DIR$/taobaoui/taobaoui.iml" />
       <module fileurl="file://$PROJECT_DIR$/waterripple/waterripple.iml" filepath="$PROJECT_DIR$/waterripple/waterripple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webview/webview.iml" filepath="$PROJECT_DIR$/webview/webview.iml" />
       <module fileurl="file://$PROJECT_DIR$/wheelview/wheelview.iml" filepath="$PROJECT_DIR$/wheelview/wheelview.iml" />
     </modules>
   </component>
