@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyLib.iml" filepath="$PROJECT_DIR$/MyLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/choosepictrue/choosepictrue.iml" filepath="$PROJECT_DIR$/choosepictrue/choosepictrue.iml" />
       <module fileurl="file://$PROJECT_DIR$/dataselector/dataselector.iml" filepath="$PROJECT_DIR$/dataselector/dataselector.iml" />
@@ -21,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/waterripple/waterripple.iml" filepath="$PROJECT_DIR$/waterripple/waterripple.iml" />
       <module fileurl="file://$PROJECT_DIR$/webview/webview.iml" filepath="$PROJECT_DIR$/webview/webview.iml" />
       <module fileurl="file://$PROJECT_DIR$/wheelview/wheelview.iml" filepath="$PROJECT_DIR$/wheelview/wheelview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhangLib.iml" filepath="$PROJECT_DIR$/zhangLib.iml" />
     </modules>
   </component>
 </project>

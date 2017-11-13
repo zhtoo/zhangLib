@@ -33,16 +33,13 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         //设置背景颜色 透明  
         webView.setBackgroundColor(Color.argb(0, 0, 0, 0));
         //设置本地调用对象及其接口 
-        JavaScriptObject javaScriptObject =new JavaScriptObject(this);
+        JavaScriptObject javaScriptObject = new JavaScriptObject(this);
         //添加js的接口
-        webView.addJavascriptInterface(javaScriptObject,"myObj");
-
+        webView.addJavascriptInterface(javaScriptObject, "myObj");
         //载入本地js  
-       webView.loadUrl("file:///android_asset/test.html");
-
+       // webView.loadUrl("file:///android_asset/test.html");
         //载入网络端js  
-       // webView.loadUrl("http://10.0.2.2:8080/test.html");
-
+         webView.loadUrl("http://10.0.2.2:8080/test.html");
         //点击调用js中方法  
         button.setOnClickListener(this);
 
@@ -51,8 +48,8 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.webview_bt) {
-            String str= "我是来自As的参数";
-            webView.loadUrl("javascript:funFromjs('"+str+"')");
+            String str = "我是来自As的参数";
+            webView.loadUrl("javascript:funFromjs('" + str + "')");
         }
     }
 
@@ -74,8 +71,8 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         }
 
         @JavascriptInterface
-        public void  funToMain(){
-            Intent intent =new Intent(mContxt,MainActivity.class);
+        public void funToMain() {
+            Intent intent = new Intent(mContxt, MainActivity.class);
             startActivity(intent);
             finish();
         }

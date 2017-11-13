@@ -15,3 +15,9 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+#使用了webview和js交互时的配置：
+-keepclassmembers class com.hs.webview.WebViewActivity {
+  public *;
+}
+-keepattributes *Annotation*
+-keepattributes *JavascriptInterface*
