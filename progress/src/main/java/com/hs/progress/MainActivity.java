@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void click10(View view){
         Log.d("test","点击");
-        bar.setMaxProgress(100);
+        bar.setMaxProgress(200);
         bar.setCurrentProgress(10);
     }
 
