@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/choosepictrue/choosepictrue.iml" filepath="$PROJECT_DIR$/choosepictrue/choosepictrue.iml" />
       <module fileurl="file://$PROJECT_DIR$/dataselector/dataselector.iml" filepath="$PROJECT_DIR$/dataselector/dataselector.iml" />
       <module fileurl="file://$PROJECT_DIR$/drawerlayout/drawerlayout.iml" filepath="$PROJECT_DIR$/drawerlayout/drawerlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grouprecyclerview/grouprecyclerview.iml" filepath="$PROJECT_DIR$/grouprecyclerview/grouprecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/mymap/mymap.iml" filepath="$PROJECT_DIR$/mymap/mymap.iml" />
       <module fileurl="file://$PROJECT_DIR$/progress/progress.iml" filepath="$PROJECT_DIR$/progress/progress.iml" />

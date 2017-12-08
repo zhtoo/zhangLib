@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GroupRecyclerView</string>
+
+
+
+    <item name="type_header" type="integer"/>
+    <item name="type_footer" type="integer"/>
+    <item name="type_child" type="integer"/>
+
+
+    <string name="grid_children_1">子项为Grid的列表</string>
+
+</resources>
