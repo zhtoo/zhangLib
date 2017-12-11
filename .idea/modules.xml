@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/grouprecyclerview/grouprecyclerview.iml" filepath="$PROJECT_DIR$/grouprecyclerview/grouprecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/mymap/mymap.iml" filepath="$PROJECT_DIR$/mymap/mymap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photoviewdemo/photoviewdemo.iml" filepath="$PROJECT_DIR$/photoviewdemo/photoviewdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/progress/progress.iml" filepath="$PROJECT_DIR$/progress/progress.iml" />
       <module fileurl="file://$PROJECT_DIR$/progressdemo/progressdemo.iml" filepath="$PROJECT_DIR$/progressdemo/progressdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ptr/ptr.iml" filepath="$PROJECT_DIR$/ptr/ptr.iml" />
